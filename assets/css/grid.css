@@ -1,0 +1,97 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* background-color: sandybrown; */
+    line-height: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+    align-items: stretch;
+}
+
+.logo {
+    max-height: 3.5rem;
+}
+
+.sidebar-header {
+    flex: 0 0 14rem;
+}
+
+.body-header {
+    background-color: #FFFFFF;
+    width: calc(100% - 14rem);
+    background-color: gray;
+}
+
+.search-area {
+    background-color: #dcdcdc;
+    padding: .3rem .6rem;
+    border-radius: 2rem;
+}
+
+.search-input {
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    margin: 0 .6rem;
+}
+
+.card-logo{
+    max-width: 80px;
+    border-radius: 4px;
+}
+
+.header-notification{
+    position: absolute;
+    left: 0;
+    margin-top: .2rem;
+    width: 16rem;
+    background-color: white;
+    color: #000000;
+    display: none;
+}
+
+.header-comment{
+    position: absolute;
+    width: 18rem;
+    height: 100vh;
+    /* left: 0; */
+    background-color: #FFFFFF;
+    display: none;
+}
+
+.header-comment-warper{
+    height: 80%;
+    overflow: auto;
+}
+
+.header-avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: .3rem;
+    margin: .3rem;
+}
+
+.header-username{
+    color: #333333;
+}
+
+.header-profile{
+    position: absolute;
+    margin-top: .2rem;
+    left: 0;
+    z-index: 1000;
+    height: auto;
+    width: 13rem;
+    background-color: #FFFFFF;
+    color: #000000;
+    display: none;
+}
+
+.header-profile-link{
+    padding: .4rem;
+    font-size: .8rem;
+    line-height: 1.4rem;
+}

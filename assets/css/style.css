@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Noto Sans Arabic";
+    src: url(../fonts/Noto_Sans_Arabic/NotoSansArabic-Light.ttf) format('tff');
+}
+
+*{
+    direction: rtl;
+    text-align: right;
+}
+
+.bg-gray{
+    background-color: #404E67;
+    color: #dcdcdc;
+}
+
+.pointer{
+    cursor: pointer;
+}
