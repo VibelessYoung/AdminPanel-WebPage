@@ -16,3 +16,18 @@
 .pointer{
     cursor: pointer;
 }
+
+@media only screen and (max-width: 767.98px){
+    .header{
+        display: block;
+    }
+
+    .sidebar-header{
+        width: 100%;
+    }
+
+    .body-header{
+        display: none;
+        width: 100%;
+    }
+}

@@ -95,3 +95,56 @@
     font-size: .8rem;
     line-height: 1.4rem;
 }
+
+.body-container{
+    margin-top: 3.5rem;
+    z-index: 10000;
+    display: flex;
+}
+
+.sidebar{
+    flex: 0 0 14rem;
+    background-color: #404e67;
+    color: #dcdcdc;
+}
+
+.sidebar-container{
+    height: calc(100vh - 3.6rem);
+    /* position: fixed; */
+    right: 0;
+    top: 3.5rem;
+    z-index: 10000;
+}
+
+.sidebar-warper{
+    padding: 1rem 0;
+    overflow: auto;
+}
+
+.sidebar-warper::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar-content{
+    padding: 0 1rem;
+    font-size: .9rem;
+    margin-top: 1rem;
+    color: #999999;
+}
+
+.sidebar-link{
+    font-size: .9rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: .4rem 1rem;
+    display: block;
+    outline: none;
+    border: none;
+    color: #dcdcdc;
+    transition: all .3s;
+}
+
+.sidebar-link:hover{
+    text-decoration: none;
+    color: tomato;
+}
