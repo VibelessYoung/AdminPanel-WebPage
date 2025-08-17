@@ -31,3 +31,10 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 767.98px) {
+    .sidebar{
+        display: none;
+        z-index: 1000;
+    }
+}

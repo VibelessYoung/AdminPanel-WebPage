@@ -217,3 +217,37 @@ button::before {
 button:hover {
     color: tomato;
 }
+
+.boxs{
+    margin-top: 40px;
+}
+
+.boxs-row{
+    margin-bottom: 20px;
+}
+
+.box{
+    margin-bottom: 20px;
+}
+
+.main-body-container {
+    background-color: #f3f3f3;
+    margin: 1rem 0;
+    border-radius: .25rem;
+    padding: 1rem;
+}
+
+.main-body-container-header h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-body-container-header p {
+    font-size: 1rem;
+    color: #333333;
+    opacity: 65%;
+}
+
+.body-content p {
+    font-size: .9rem;
+}
