@@ -54,5 +54,9 @@ $(document).ready(function(){
     $('#header-comment-toggle').click(function(){
         $('#header-comment').fadeToggle(); 
     })
+
+    $('#header-profile-toggle').click(function(){
+        $('#header-profile').fadeToggle(); 
+    })
 })
 
