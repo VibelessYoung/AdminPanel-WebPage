@@ -9,13 +9,27 @@ $(document).ready(function(){
 
 
     $('#toggle-on').click(function(){
-        $('.sidebar').fadeOut(500);
+        $('.sidebar').fadeOut(400);
 
         setTimeout(function(){
         removeToggleClass();
         $('#toggle-on').addClass('d-none');
         $('#toggle-off').removeClass('d-none');
-    }, 500)
+    }, 400)
+    })
+
+    $('#toggle-off').click(function(){
+        $('.sidebar').fadeIn(400);
+
+        setTimeout(function(){
+        removeToggleClass();
+        $('#toggle-on').removeClass('d-none');
+        $('#toggle-off').addClass('d-none');
+    }, 400)
+    })
+
+    $('#menu-toggle').click(function(){
+        $('#body-header').toggle(400);
     })
 })
 

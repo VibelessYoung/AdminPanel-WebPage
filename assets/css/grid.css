@@ -20,9 +20,8 @@
 }
 
 .body-header {
-    background-color: #FFFFFF;
+    background-color: #f3f3f3;
     width: calc(100% - 14rem);
-    background-color: gray;
 }
 
 .search-area {
