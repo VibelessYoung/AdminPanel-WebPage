@@ -66,20 +66,25 @@ $(document).ready(function () {
     $("#header-profile").fadeToggle();
   });
 
-  $(".sidebar-group-link").click(function () {
-    
-    $(".sidebar-group-link").removeClass("sidebar-group-link-active");
-    $(".sidebar-group-link")
-      .children(".sidebar-dropdown-toggle")
-      .children(".angel")
-      .removeClass("fa-angle-down")
-      .addClass("fa-angle-left");
+$(".sidebar-group-link").click(function () {
+    let isActive = $(this).hasClass("sidebar-group-link-active");
 
-    $(this).addClass("sidebar-group-link-active");
-    $(this)
-      .children(".sidebar-dropdown-toggle")
-      .children(".angel")
-      .removeClass("fa-angle-left")
-      .addClass("fa-angle-down");
-  });
+    $(".sidebar-group-link")
+        .removeClass("sidebar-group-link-active")
+        .children(".sidebar-dropdown-toggle")
+        .children(".angel")
+        .removeClass("fa-angle-down")
+        .addClass("fa-angle-left");
+
+    if (!isActive) {
+        $(this)
+            .addClass("sidebar-group-link-active")
+            .children(".sidebar-dropdown-toggle")
+            .children(".angel")
+            .removeClass("fa-angle-left")
+            .addClass("fa-angle-down");
+    }
+});
+
+
 });
