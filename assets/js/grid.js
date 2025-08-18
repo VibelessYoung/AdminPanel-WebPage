@@ -50,5 +50,9 @@ $(document).ready(function(){
     $('#header-notification-toggle').click(function(){
         $('#header-notification').fadeToggle(); 
     })
+
+    $('#header-comment-toggle').click(function(){
+        $('#header-comment').fadeToggle(); 
+    })
 })
 
