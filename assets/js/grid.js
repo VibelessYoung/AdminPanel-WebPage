@@ -46,5 +46,9 @@ $(document).ready(function(){
         $('#search-area').removeClass('d-md-inline');
         }, 400)
     })
+
+    $('#header-notification-toggle').click(function(){
+        $('#header-notification').fadeToggle(); 
+    })
 })
 
