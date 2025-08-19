@@ -86,5 +86,39 @@ $(".sidebar-group-link").click(function () {
     }
 });
 
+$("#full-screen").click(function () {
+  toggleFullScreen();
+  });
 
+  function toggleFullScreen(){
+    if((document.fullScreenElement && document.fullScreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)){
+         if(document.documentElement.requestFullscreen){
+            document.documentElement.requestFullscreen();
+         }
+         else if(document.documentElement.mozRequestFullscreen){
+            document.documentElement.mozRequestFullscreen();
+         }
+         else if(document.documentElement.webkitRequestFullscreen){
+            document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+         }
+         $('#screen-compress').removeClass('d-none');
+         $('#screen-expand').addClass('d-none');
+      }
+      else{
+         if(document.cancelFullScreen)
+         {
+            document.cancelFullScreen();
+         }
+         else if(document.mozCancelFullScreen)
+         {
+            document.mozCancelFullScreen();
+         }
+         else if(document.webkitCancelFullScreen)
+         {
+            document.webkitCancelFullScreen();
+         }
+         $('#screen-compress').addClass('d-none');
+         $('#screen-expand').removeClass('d-none');
+      }
+  }
 });
