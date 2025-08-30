@@ -1,4 +1,8 @@
+// START
+
 $(document).ready(function () {
+
+  // SHOW / HIDE ICONS
 
   function removeToggleClass() {
     $("#toggle-on").removeClass("d-md-inline");
@@ -6,6 +10,8 @@ $(document).ready(function () {
     $("#toggle-off").removeClass("d-inline");
     $("#toggle-off").removeClass("d-md-none");
   }
+
+  // HIDE SIDEBAR
 
   $("#toggle-on").click(function () {
 
@@ -17,6 +23,8 @@ $(document).ready(function () {
       $("#toggle-off").removeClass("d-none");
     }, 400);
   });
+
+  // SHOW SIDEBAR
 
   $("#toggle-off").click(function () {
 
@@ -33,6 +41,8 @@ $(document).ready(function () {
 
     $("#body-header").toggle(400);
   });
+
+  // HIDE / SHOW SEARCHBOX
 
   $("#search-toggle").click(function () {
 
@@ -51,6 +61,8 @@ $(document).ready(function () {
     }, 400);
   });
 
+  // HIDE / SHOW NOTIF
+
   $("#header-notification-toggle").click(function () {
 
     $("#header-notification").fadeToggle();
@@ -65,6 +77,8 @@ $(document).ready(function () {
 
     $("#header-profile").fadeToggle();
   });
+
+  // HIDE / SHOW SIDEBAR LISTS
 
 $(".sidebar-group-link").click(function () {
     let isActive = $(this).hasClass("sidebar-group-link-active");
@@ -85,6 +99,8 @@ $(".sidebar-group-link").click(function () {
             .addClass("fa-angle-down");
     }
 });
+
+// FULL SCREEN
 
 $("#full-screen").click(function () {
   toggleFullScreen();
